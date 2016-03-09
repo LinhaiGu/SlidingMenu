@@ -1,13 +1,10 @@
 package com.example.slidingmenuproject.view;
 
-import java.util.concurrent.Executors;
-
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
@@ -179,7 +176,7 @@ public class SlidingMenuView extends LinearLayout implements
 				/**
 				 * ≤‡±ﬂœ‘ æ£¨Õ˘ªÿª¨∂Ø
 				 */
-				setSlidingMenuLeftMarign((int) (0 - Math.abs(offsetX)));
+				setSlidingMenuLeftMarign((int) (mSlidingMarginParams.leftMargin+offsetX));
 			} else if (mSlidingMarginParams.leftMargin == mSlidingMenuWidth
 					&& offsetX < 0) {
 				/**
