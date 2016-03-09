@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_sliding"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/holo_green_light" >
+
+    <ImageView
+        android:id="@+id/iv_iamge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU"
+        android:textSize="40sp" />
+
+</LinearLayout>
